@@ -44,7 +44,7 @@ function getMealList(){
 
 
 // get recipe of the meal
-//function getMealRecipe(e){
+function getMealRecipe(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
         let mealItem = e.target.parentElement.parentElement;
