@@ -1,7 +1,7 @@
 const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
-const recipeCloseBtn = document.getElementById('recipe-close-btn');
+const recipeCloseBtn = document.getElementById('close-btn-btn');
 
 // event listeners
 searchBtn.addEventListener('click', getMealList);
@@ -68,9 +68,7 @@ function mealRecipeModal(meal){
         <div class = "recipe-meal-img">
             <img src = "${meal.strMealThumb}" alt = "">
         </div>
-        <div class = "recipe-link">
-            <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
-        </div>
+        
     `;
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
